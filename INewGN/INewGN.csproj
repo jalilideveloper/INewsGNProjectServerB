@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A23076D7-047B-4ACE-A007-444B54FA77B7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>INewGN</RootNamespace>
+    <AssemblyName>INewGN</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ApplicationInsights">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\CategoriesController.cs" />
+    <Compile Include="Controllers\CitiesController.cs" />
+    <Compile Include="Controllers\DTController.cs" />
+    <Compile Include="Controllers\PageinationController.cs" />
+    <Compile Include="Controllers\ProvincesController.cs" />
+    <Compile Include="Controllers\RegionsController.cs" />
+    <Compile Include="Controllers\SliderController.cs" />
+    <Compile Include="Controllers\SyncController.cs" />
+    <Compile Include="Controllers\tblAdsLocationsController.cs" />
+    <Compile Include="Controllers\tblAdsSchedulesController.cs" />
+    <Compile Include="Controllers\tblBlockTagsController.cs" />
+    <Compile Include="Controllers\tblCategoriesController.cs" />
+    <Compile Include="Controllers\tblCommentsController.cs" />
+    <Compile Include="Controllers\tblDailyDaysController.cs" />
+    <Compile Include="Controllers\tblDaysController.cs" />
+    <Compile Include="Controllers\tblFavoritePageNewsController.cs" />
+    <Compile Include="Controllers\tblHashtagAdsController.cs" />
+    <Compile Include="Controllers\tblHashtagLinkestansController.cs" />
+    <Compile Include="Controllers\tblHashtagNewsController.cs" />
+    <Compile Include="Controllers\tblHashtagPagePostsController.cs" />
+    <Compile Include="Controllers\tblHashTagsController.cs" />
+    <Compile Include="Controllers\tblIpAddressesController.cs" />
+    <Compile Include="Controllers\tblLanguagesController.cs" />
+    <Compile Include="Controllers\tblLinkestansController.cs" />
+    <Compile Include="Controllers\tblLocationsController.cs" />
+    <Compile Include="Controllers\tblNewsController.cs" />
+    <Compile Include="Controllers\tblNewsLocationsController.cs" />
+    <Compile Include="Controllers\tblPageFreindsController.cs" />
+    <Compile Include="Controllers\tblPagePostLocationsController.cs" />
+    <Compile Include="Controllers\tblPagePostsController.cs" />
+    <Compile Include="Controllers\tblPrivacyTypesController.cs" />
+    <Compile Include="Controllers\tblRateUsersController.cs" />
+    <Compile Include="Controllers\tblRegionsController.cs" />
+    <Compile Include="Controllers\tblRssesController.cs" />
+    <Compile Include="Controllers\tblSearchedKeywordsController.cs" />
+    <Compile Include="Controllers\tblTimesController.cs" />
+    <Compile Include="Controllers\tblUploadAdsFilesController.cs" />
+    <Compile Include="Controllers\tblUserWallPagesController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CheckUserPass_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbINewsGn.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbINewsGn.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbINewsGn.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbINewsGn.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbINewsGn.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetAllCategories_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetAllLinkestans_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetAllNewsForCompareWithNewNews_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetAllNews_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetAllRecentNewsTopView_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetAllRssCategory_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetAllTop10News_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetAllWallPagesByUserID_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdAdsLocation_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdBlockTag_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdCategories_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdComments_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdDailyDays_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdDays_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdFavoritePageNews_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdHashtagAds_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdHashtagLinkestan_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdHashtagNews_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdHashtagPagePost_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdHashTag_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdIpAddress_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdLanguages_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdLinkestan_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdLocations_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdNewsLocation_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdNews_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdPageFreinds_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdPagePostLocations_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdPagePost_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdPagePrivacyType_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdRateUsers_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdRss_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdSearchedKeyword_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdTimes_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdUploadAdsFile_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdUsers_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByIdUserWallPages_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetByNameCategories_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetCountSearchedKeyInDayMonthYear_Ago_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetHashtagIDByTagName_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetLatestNewsByTagNameOrderByDate_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetLatestNewsOrderByDateByRssID_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetLatestNewsOrderByDate_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetNewsOrderByDate_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetToNewsEachCategory_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetTop200HashTagDayWeekMonthYear_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetTopNewsSlider_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetTopViewNews_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LatestNewsOrderByPublishDate_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LatestNewsOrderByViewNumber_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagrams_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SyndicatorTopNewsCategoryID_Result.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagram.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblAdsLocation.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblAdsSchedule.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblArchiveHashTag.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblBlockTag.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblCategory.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblCity.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblComment.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblCountry.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblDailyDay.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblDay.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblFavoritePageNew.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblGeoRegion.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblHashTag.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblHashtagAd.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblHashtagDateTime.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblHashtagLinkestan.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblHashtagNew.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblHashtagPagePost.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblIpAddress.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblLanguage.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblLinkestan.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblLocation.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblNeighbourhoodRange.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblNew.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblNewsLocation.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblPageFreind.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblPagePost.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblPagePostLocation.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblPrivacyType.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblProvince.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblRateUser.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblRegion.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblRss.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblRssType.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblSearchedKeyword.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblTime.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblUploadAdsFile.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblUser.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblUserLoginLog.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblUserWallPage.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TempTopCategoryNew.cs">
+      <DependentUpon>dbINewsGn.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilties\DataCenter.cs" />
+    <Compile Include="Utilties\Utility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Models\dbINewsGn.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>dbINewsGn.Context.cs</LastGenOutput>
+      <DependentUpon>dbINewsGn.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\dbINewsGn.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>dbINewsGn.edmx</DependentUpon>
+      <LastGenOutput>dbINewsGn.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Models\dbINewsGn.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>dbINewsGn.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Models\dbINewsGn.edmx.diagram">
+      <DependentUpon>dbINewsGn.edmx</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>18113</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:18113/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

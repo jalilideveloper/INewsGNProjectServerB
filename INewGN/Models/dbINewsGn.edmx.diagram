@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b3512399817a406ba8fdbf912b47c222" Name="Diagram1">
+        <EntityTypeShape EntityType="dbNIGNModel.sysdiagram" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblAdsLocation" Width="1.5" PointX="10.5" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblAdsSchedule" Width="1.5" PointX="5.25" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblArchiveHashTag" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblBlockTag" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblCategory" Width="1.5" PointX="3" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblCity" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblComment" Width="1.5" PointX="12.75" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblCountry" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblDailyDay" Width="1.5" PointX="10.5" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblDay" Width="1.5" PointX="8.25" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblFavoritePageNew" Width="1.5" PointX="12.5" PointY="29.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblGeoRegion" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblHashTag" Width="1.5" PointX="5.25" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblHashtagAd" Width="1.5" PointX="10.5" PointY="25.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblHashtagDateTime" Width="1.5" PointX="4.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblHashtagLinkestan" Width="1.5" PointX="13.5" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblHashtagNew" Width="1.5" PointX="12.75" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblHashtagPagePost" Width="1.5" PointX="7.5" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblIpAddress" Width="1.5" PointX="10.25" PointY="35.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblLanguage" Width="1.5" PointX="0.75" PointY="24" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblLinkestan" Width="1.5" PointX="8.25" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblLocation" Width="1.5" PointX="8" PointY="27.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblNeighbourhoodRange" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblNew" Width="1.5" PointX="10.5" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblNewsLocation" Width="1.5" PointX="12.75" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblPageFreind" Width="1.5" PointX="12.5" PointY="32.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblPagePost" Width="1.5" PointX="5.25" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblPagePostLocation" Width="1.5" PointX="7.5" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblPrivacyType" Width="1.5" PointX="8" PointY="35.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblProvince" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblRateUser" Width="1.5" PointX="5.25" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblRegion" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblRss" Width="1.5" PointX="8.25" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblRssType" Width="1.5" PointX="0.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblSearchedKeyword" Width="1.5" PointX="10.25" PointY="39.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblTime" Width="1.5" PointX="8.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblUploadAdsFile" Width="1.5" PointX="7.5" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblUserLoginLog" Width="1.5" PointX="5.25" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblUser" Width="1.5" PointX="3" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.tblUserWallPage" Width="1.5" PointX="10.25" PointY="29.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbNIGNModel.TempTopCategoryNew" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblAdsLocations_tblAdsSchedules" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblAdsLocations_tblLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblAdsSchedules_tblUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblDailyDays_tblAdsSchedules" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblHashtagAds_tblAdsSchedules" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblUploadAdsFile_tblAdsSchedules" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblCategories_tblLanguages" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblLinkestan_tblCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblPagePost_tblCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblRss_tblCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblRegions_tblCity" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblComments_tblNews" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblComments_tblUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblCountry_tblGeoRegion" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblDailyDays_tblDays" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblDailyDays_tblTimes" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblFavoritePageNews_tblUserWallPages" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblHashtagAds_tblHashtag" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblHashtagLinkestan_tblHashtag" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblHashtagNews_tblHashtag" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblHashtagPagePost_tblHashtag" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblHashtagLinkestan_tblLanguages" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblHashtagLinkestan_tblLinkestan" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblHashtagNews_tblLanguages" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblHashtagNews_tblNews" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblHashtagPagePost_tblPagePost" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblIpAddress_tblLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblLinkestan_tblLanguages" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblRss_tblLanguages" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblUsers_tblLanguages" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblLinkestan_tblUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblNewsLocation_tblLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblPagePostLocations_tblLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblSearchedKeyword_tblLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblUserWallPages_tblLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblNews_tblRss" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblNewsLocation_tblNews" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblPageFreinds_tblUserWallPages" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblPagePost_tblUserWallPages" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblPagePostLocations_tblPagePost" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblUserWallPages_tblPrivacyType" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblRateUsers_tblUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblUserLoginLog_tblUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="dbNIGNModel.FK_tblUserWallPages_tblUsers" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

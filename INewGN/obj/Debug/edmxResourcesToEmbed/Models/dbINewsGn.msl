@@ -1,0 +1,1390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbNIGNModelStoreContainer" CdmEntityContainer="dbNIGNEntities">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="dbNIGNModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAdsLocations">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblAdsLocation">
+        <MappingFragment StoreEntitySet="tblAdsLocations">
+          <ScalarProperty Name="AdsLocID" ColumnName="AdsLocID" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="AdsID" ColumnName="AdsID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAdsSchedules">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblAdsSchedule">
+        <MappingFragment StoreEntitySet="tblAdsSchedules">
+          <ScalarProperty Name="AdsShedualsID" ColumnName="AdsShedualsID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="DailyDaysID" ColumnName="DailyDaysID" />
+          <ScalarProperty Name="UploadAdsFileID" ColumnName="UploadAdsFileID" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsArchive" ColumnName="IsArchive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="AgahiID" ColumnName="AgahiID" />
+          <ScalarProperty Name="CategoryAgahiID" ColumnName="CategoryAgahiID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblArchiveHashTags">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblArchiveHashTag">
+        <MappingFragment StoreEntitySet="tblArchiveHashTags">
+          <ScalarProperty Name="ArchiveHashtagID" ColumnName="ArchiveHashtagID" />
+          <ScalarProperty Name="HashtagID" ColumnName="HashtagID" />
+          <ScalarProperty Name="CalculateDate" ColumnName="CalculateDate" />
+          <ScalarProperty Name="RepCount" ColumnName="RepCount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblBlockTags">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblBlockTag">
+        <MappingFragment StoreEntitySet="tblBlockTag">
+          <ScalarProperty Name="BlockKeyID" ColumnName="BlockKeyID" />
+          <ScalarProperty Name="BlockKeywords" ColumnName="BlockKeywords" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCategories">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblCategory">
+        <MappingFragment StoreEntitySet="tblCategories">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="ParrentID" ColumnName="ParrentID" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCities">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblCity">
+        <MappingFragment StoreEntitySet="tblCity">
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="ProvinceId" ColumnName="ProvinceId" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblComments">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblComment">
+        <MappingFragment StoreEntitySet="tblComments">
+          <ScalarProperty Name="CommentID" ColumnName="CommentID" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCountries">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblCountry">
+        <MappingFragment StoreEntitySet="tblCountry">
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+          <ScalarProperty Name="GeoRegionID" ColumnName="GeoRegionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDailyDays">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblDailyDay">
+        <MappingFragment StoreEntitySet="tblDailyDays">
+          <ScalarProperty Name="DailyDaysID" ColumnName="DailyDaysID" />
+          <ScalarProperty Name="DayID" ColumnName="DayID" />
+          <ScalarProperty Name="TimeID" ColumnName="TimeID" />
+          <ScalarProperty Name="AdsShedualsID" ColumnName="AdsShedualsID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDays">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblDay">
+        <MappingFragment StoreEntitySet="tblDays">
+          <ScalarProperty Name="DayID" ColumnName="DayID" />
+          <ScalarProperty Name="DayName" ColumnName="DayName" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblFavoritePageNews">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblFavoritePageNew">
+        <MappingFragment StoreEntitySet="tblFavoritePageNews">
+          <ScalarProperty Name="FavoritesCategoryNewsID" ColumnName="FavoritesCategoryNewsID" />
+          <ScalarProperty Name="UserWallPageID" ColumnName="UserWallPageID" />
+          <ScalarProperty Name="CategoryIDNews" ColumnName="CategoryIDNews" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblGeoRegions">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblGeoRegion">
+        <MappingFragment StoreEntitySet="tblGeoRegion">
+          <ScalarProperty Name="GeoRegionID" ColumnName="GeoRegionID" />
+          <ScalarProperty Name="GeoTitle" ColumnName="GeoTitle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblHashTags">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblHashTag">
+        <MappingFragment StoreEntitySet="tblHashTag">
+          <ScalarProperty Name="HashtagID" ColumnName="HashtagID" />
+          <ScalarProperty Name="HashtagName" ColumnName="HashtagName" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblHashtagAds">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblHashtagAd">
+        <MappingFragment StoreEntitySet="tblHashtagAds">
+          <ScalarProperty Name="HashtagAdsID" ColumnName="HashtagAdsID" />
+          <ScalarProperty Name="HashtagID" ColumnName="HashtagID" />
+          <ScalarProperty Name="AdsID" ColumnName="AdsID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblHashtagDateTimes">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblHashtagDateTime">
+        <MappingFragment StoreEntitySet="tblHashtagDateTimes">
+          <ScalarProperty Name="HashtagDateTimeID" ColumnName="HashtagDateTimeID" />
+          <ScalarProperty Name="HashtagID" ColumnName="HashtagID" />
+          <ScalarProperty Name="Datetime" ColumnName="Datetime" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblHashtagLinkestans">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblHashtagLinkestan">
+        <MappingFragment StoreEntitySet="tblHashtagLinkestan">
+          <ScalarProperty Name="HtagLinkID" ColumnName="HtagLinkID" />
+          <ScalarProperty Name="LinkestanID" ColumnName="LinkestanID" />
+          <ScalarProperty Name="HashtagID" ColumnName="HashtagID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblHashtagNews">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblHashtagNew">
+        <MappingFragment StoreEntitySet="tblHashtagNews">
+          <ScalarProperty Name="HashTagNewsID" ColumnName="HashTagNewsID" />
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="HashtagID" ColumnName="HashtagID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblHashtagPagePosts">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblHashtagPagePost">
+        <MappingFragment StoreEntitySet="tblHashtagPagePost">
+          <ScalarProperty Name="HashtagPagePostID" ColumnName="HashtagPagePostID" />
+          <ScalarProperty Name="HashtagID" ColumnName="HashtagID" />
+          <ScalarProperty Name="PagePostID" ColumnName="PagePostID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblIpAddresses">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblIpAddress">
+        <MappingFragment StoreEntitySet="tblIpAddress">
+          <ScalarProperty Name="IpAddressID" ColumnName="IpAddressID" />
+          <ScalarProperty Name="IpAddress" ColumnName="IpAddress" />
+          <ScalarProperty Name="DateRegister" ColumnName="DateRegister" />
+          <ScalarProperty Name="BrowserName" ColumnName="BrowserName" />
+          <ScalarProperty Name="WindowsName" ColumnName="WindowsName" />
+          <ScalarProperty Name="BrowserVersion" ColumnName="BrowserVersion" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLanguages">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblLanguage">
+        <MappingFragment StoreEntitySet="tblLanguages">
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="Lnaguage" ColumnName="Lnaguage" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLinkestans">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblLinkestan">
+        <MappingFragment StoreEntitySet="tblLinkestan">
+          <ScalarProperty Name="LikestanID" ColumnName="LikestanID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="LinkName" ColumnName="LinkName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="DateRegister" ColumnName="DateRegister" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLocations">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblLocation">
+        <MappingFragment StoreEntitySet="tblLocations">
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="CurrentLication" ColumnName="CurrentLication" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="NeighbourhoodID" ColumnName="NeighbourhoodID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblNeighbourhoodRanges">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblNeighbourhoodRange">
+        <MappingFragment StoreEntitySet="tblNeighbourhoodRange">
+          <ScalarProperty Name="NeighbourhoodRangeID" ColumnName="NeighbourhoodRangeID" />
+          <ScalarProperty Name="NeighbourhoodRangeName" ColumnName="NeighbourhoodRangeName" />
+          <ScalarProperty Name="ProvinceID" ColumnName="ProvinceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblNews">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblNew">
+        <MappingFragment StoreEntitySet="tblNews">
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PublishDate" ColumnName="PublishDate" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="ViewNumber" ColumnName="ViewNumber" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="RssID" ColumnName="RssID" />
+          <ScalarProperty Name="LikeCount" ColumnName="LikeCount" />
+          <ScalarProperty Name="Unlike" ColumnName="Unlike" />
+          <ScalarProperty Name="Likes" ColumnName="Likes" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblNewsLocations">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblNewsLocation">
+        <MappingFragment StoreEntitySet="tblNewsLocation">
+          <ScalarProperty Name="NewsLocationID" ColumnName="NewsLocationID" />
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPageFreinds">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblPageFreind">
+        <MappingFragment StoreEntitySet="tblPageFreinds">
+          <ScalarProperty Name="PageFreindID" ColumnName="PageFreindID" />
+          <ScalarProperty Name="UserWallPageID" ColumnName="UserWallPageID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Invited" ColumnName="Invited" />
+          <ScalarProperty Name="Confrim" ColumnName="Confrim" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPagePosts">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblPagePost">
+        <MappingFragment StoreEntitySet="tblPagePost">
+          <ScalarProperty Name="PagePostId" ColumnName="PagePostId" />
+          <ScalarProperty Name="UserWallPageID" ColumnName="UserWallPageID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Likes" ColumnName="Likes" />
+          <ScalarProperty Name="UnLike" ColumnName="UnLike" />
+          <ScalarProperty Name="Visit" ColumnName="Visit" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPagePostLocations">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblPagePostLocation">
+        <MappingFragment StoreEntitySet="tblPagePostLocations">
+          <ScalarProperty Name="PagePostLocID" ColumnName="PagePostLocID" />
+          <ScalarProperty Name="PagePostID" ColumnName="PagePostID" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPrivacyTypes">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblPrivacyType">
+        <MappingFragment StoreEntitySet="tblPrivacyType">
+          <ScalarProperty Name="PrivacyTypeID" ColumnName="PrivacyTypeID" />
+          <ScalarProperty Name="PrivacyType" ColumnName="PrivacyType" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblProvinces">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblProvince">
+        <MappingFragment StoreEntitySet="tblProvince">
+          <ScalarProperty Name="ProvinceID" ColumnName="ProvinceID" />
+          <ScalarProperty Name="ProvinceName" ColumnName="ProvinceName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblRateUsers">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblRateUser">
+        <MappingFragment StoreEntitySet="tblRateUsers">
+          <ScalarProperty Name="UserRateID" ColumnName="UserRateID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="PostCount" ColumnName="PostCount" />
+          <ScalarProperty Name="LikesCount" ColumnName="LikesCount" />
+          <ScalarProperty Name="UnLikesCount" ColumnName="UnLikesCount" />
+          <ScalarProperty Name="CommentsCount" ColumnName="CommentsCount" />
+          <ScalarProperty Name="SaveImageCount" ColumnName="SaveImageCount" />
+          <ScalarProperty Name="ShareFileCount" ColumnName="ShareFileCount" />
+          <ScalarProperty Name="FriendCount" ColumnName="FriendCount" />
+          <ScalarProperty Name="SpamCount" ColumnName="SpamCount" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblRegions">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblRegion">
+        <MappingFragment StoreEntitySet="tblRegions">
+          <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblRsses">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblRss">
+        <MappingFragment StoreEntitySet="tblRss">
+          <ScalarProperty Name="RssID" ColumnName="RssID" />
+          <ScalarProperty Name="RssUrl" ColumnName="RssUrl" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="RssTypeID" ColumnName="RssTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblRssTypes">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblRssType">
+        <MappingFragment StoreEntitySet="tblRssType">
+          <ScalarProperty Name="RssTypeID" ColumnName="RssTypeID" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSearchedKeywords">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblSearchedKeyword">
+        <MappingFragment StoreEntitySet="tblSearchedKeyword">
+          <ScalarProperty Name="SearchedKeyID" ColumnName="SearchedKeyID" />
+          <ScalarProperty Name="SearchedKeyword" ColumnName="SearchedKeyword" />
+          <ScalarProperty Name="CountSearched" ColumnName="CountSearched" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+          <ScalarProperty Name="MountYear" ColumnName="MountYear" />
+          <ScalarProperty Name="LastUpdateInMount" ColumnName="LastUpdateInMount" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTimes">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblTime">
+        <MappingFragment StoreEntitySet="tblTimes">
+          <ScalarProperty Name="TimeID" ColumnName="TimeID" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUploadAdsFiles">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblUploadAdsFile">
+        <MappingFragment StoreEntitySet="tblUploadAdsFile">
+          <ScalarProperty Name="UploadAdsFileID" ColumnName="UploadAdsFileID" />
+          <ScalarProperty Name="AdsID" ColumnName="AdsID" />
+          <ScalarProperty Name="FileAddress" ColumnName="FileAddress" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUserLoginLogs">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblUserLoginLog">
+        <MappingFragment StoreEntitySet="tblUserLoginLog">
+          <ScalarProperty Name="UserLoginLogID" ColumnName="UserLoginLogID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="SMSCodeSent" ColumnName="SMSCodeSent" />
+          <ScalarProperty Name="DateSent" ColumnName="DateSent" />
+          <ScalarProperty Name="DateLogin" ColumnName="DateLogin" />
+          <ScalarProperty Name="IsCheckPassed" ColumnName="IsCheckPassed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUsers">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblUser">
+        <MappingFragment StoreEntitySet="tblUsers">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Lastname" ColumnName="Lastname" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Tell" ColumnName="Tell" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="SecondryPass" ColumnName="SecondryPass" />
+          <ScalarProperty Name="UserLinkPage" ColumnName="UserLinkPage" />
+          <ScalarProperty Name="PersonelImageUrl" ColumnName="PersonelImageUrl" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+          <ScalarProperty Name="NationalityID" ColumnName="NationalityID" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="BussinessFieldID" ColumnName="BussinessFieldID" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="NickName" ColumnName="NickName" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUserWallPages">
+      <EntityTypeMapping TypeName="dbNIGNModel.tblUserWallPage">
+        <MappingFragment StoreEntitySet="tblUserWallPages">
+          <ScalarProperty Name="UserWallPageID" ColumnName="UserWallPageID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="PrivacyTypeID" ColumnName="PrivacyTypeID" />
+          <ScalarProperty Name="PageRate" ColumnName="PageRate" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+          <ScalarProperty Name="Confrim" ColumnName="Confrim" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TelegramLink" ColumnName="TelegramLink" />
+          <ScalarProperty Name="FacebookLink" ColumnName="FacebookLink" />
+          <ScalarProperty Name="TwitterLink" ColumnName="TwitterLink" />
+          <ScalarProperty Name="GooglePlusLink" ColumnName="GooglePlusLink" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="FriendCount" ColumnName="FriendCount" />
+          <ScalarProperty Name="PageImageUrl" ColumnName="PageImageUrl" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TempTopCategoryNews">
+      <EntityTypeMapping TypeName="dbNIGNModel.TempTopCategoryNew">
+        <MappingFragment StoreEntitySet="TempTopCategoryNews">
+          <ScalarProperty Name="TempID" ColumnName="TempID" />
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="rssname" ColumnName="rssname" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="ViewNumber" ColumnName="ViewNumber" />
+          <ScalarProperty Name="Likes" ColumnName="Likes" />
+          <ScalarProperty Name="Unlike" ColumnName="Unlike" />
+          <ScalarProperty Name="RecordType" ColumnName="RecordType" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CheckUserPass" FunctionName="dbNIGNModel.Store.CheckUserPass">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.CheckUserPass_Result">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Lastname" ColumnName="Lastname" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Tell" ColumnName="Tell" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="SecondryPass" ColumnName="SecondryPass" />
+          <ScalarProperty Name="UserLinkPage" ColumnName="UserLinkPage" />
+          <ScalarProperty Name="PersonelImageUrl" ColumnName="PersonelImageUrl" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+          <ScalarProperty Name="NationalityID" ColumnName="NationalityID" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="BussinessFieldID" ColumnName="BussinessFieldID" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="NickName" ColumnName="NickName" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllCategories" FunctionName="dbNIGNModel.Store.GetAllCategories">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetAllCategories_Result">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="ParrentID" ColumnName="ParrentID" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllLinkestans" FunctionName="dbNIGNModel.Store.GetAllLinkestans">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetAllLinkestans_Result">
+          <ScalarProperty Name="LikestanID" ColumnName="LikestanID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="LinkName" ColumnName="LinkName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="DateRegister" ColumnName="DateRegister" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllNews" FunctionName="dbNIGNModel.Store.GetAllNews">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetAllNews_Result">
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Title1" ColumnName="Title1" />
+          <ScalarProperty Name="ViewNumber" ColumnName="ViewNumber" />
+          <ScalarProperty Name="PublishDate" ColumnName="PublishDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="RssID" ColumnName="RssID" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllNewsForCompareWithNewNews" FunctionName="dbNIGNModel.Store.GetAllNewsForCompareWithNewNews">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetAllNewsForCompareWithNewNews_Result">
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ViewNumber" ColumnName="ViewNumber" />
+          <ScalarProperty Name="PubDate" ColumnName="PubDate" />
+          <ScalarProperty Name="Descriptions" ColumnName="Descriptions" />
+          <ScalarProperty Name="RssID" ColumnName="RssID" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="LinkUrl" ColumnName="LinkUrl" />
+          <ScalarProperty Name="DateInserted" ColumnName="DateInserted" />
+          <ScalarProperty Name="MagazineName" ColumnName="MagazineName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllRecentNewsTopView" FunctionName="dbNIGNModel.Store.GetAllRecentNewsTopView">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetAllRecentNewsTopView_Result">
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Title1" ColumnName="Title1" />
+          <ScalarProperty Name="ViewNumber" ColumnName="ViewNumber" />
+          <ScalarProperty Name="PublishDate" ColumnName="PublishDate" />
+          <ScalarProperty Name="RssName" ColumnName="RssName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="RssID" ColumnName="RssID" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllRecord" FunctionName="dbNIGNModel.Store.GetAllRecord" />
+    <FunctionImportMapping FunctionImportName="GetAllRssCategory" FunctionName="dbNIGNModel.Store.GetAllRssCategory">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetAllRssCategory_Result">
+          <ScalarProperty Name="RssID" ColumnName="RssID" />
+          <ScalarProperty Name="RssUrl" ColumnName="RssUrl" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="RssTypeID" ColumnName="RssTypeID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllTop10News" FunctionName="dbNIGNModel.Store.GetAllTop10News">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetAllTop10News_Result">
+          <ScalarProperty Name="TempID" ColumnName="TempID" />
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="rssname" ColumnName="rssname" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="ViewNumber" ColumnName="ViewNumber" />
+          <ScalarProperty Name="Likes" ColumnName="Likes" />
+          <ScalarProperty Name="Unlike" ColumnName="Unlike" />
+          <ScalarProperty Name="RecordType" ColumnName="RecordType" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAllWallPagesByUserID" FunctionName="dbNIGNModel.Store.GetAllWallPagesByUserID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetAllWallPagesByUserID_Result">
+          <ScalarProperty Name="UserWallPageID" ColumnName="UserWallPageID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="PrivacyTypeID" ColumnName="PrivacyTypeID" />
+          <ScalarProperty Name="PageRate" ColumnName="PageRate" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+          <ScalarProperty Name="Confrim" ColumnName="Confrim" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TelegramLink" ColumnName="TelegramLink" />
+          <ScalarProperty Name="FacebookLink" ColumnName="FacebookLink" />
+          <ScalarProperty Name="TwitterLink" ColumnName="TwitterLink" />
+          <ScalarProperty Name="GooglePlusLink" ColumnName="GooglePlusLink" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="FriendCount" ColumnName="FriendCount" />
+          <ScalarProperty Name="PageImageUrl" ColumnName="PageImageUrl" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdAdsLocation" FunctionName="dbNIGNModel.Store.GetByIdAdsLocation">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdAdsLocation_Result">
+          <ScalarProperty Name="AdsLocID" ColumnName="AdsLocID" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="AdsID" ColumnName="AdsID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdBlockTag" FunctionName="dbNIGNModel.Store.GetByIdBlockTag">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdBlockTag_Result">
+          <ScalarProperty Name="BlockKeyID" ColumnName="BlockKeyID" />
+          <ScalarProperty Name="BlockKeywords" ColumnName="BlockKeywords" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdCategories" FunctionName="dbNIGNModel.Store.GetByIdCategories">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdCategories_Result">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="ParrentID" ColumnName="ParrentID" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdComments" FunctionName="dbNIGNModel.Store.GetByIdComments">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdComments_Result">
+          <ScalarProperty Name="CommentID" ColumnName="CommentID" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdDailyDays" FunctionName="dbNIGNModel.Store.GetByIdDailyDays">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdDailyDays_Result">
+          <ScalarProperty Name="DailyDaysID" ColumnName="DailyDaysID" />
+          <ScalarProperty Name="DayID" ColumnName="DayID" />
+          <ScalarProperty Name="TimeID" ColumnName="TimeID" />
+          <ScalarProperty Name="AdsShedualsID" ColumnName="AdsShedualsID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdDays" FunctionName="dbNIGNModel.Store.GetByIdDays">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdDays_Result">
+          <ScalarProperty Name="DayID" ColumnName="DayID" />
+          <ScalarProperty Name="DayName" ColumnName="DayName" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdFavoritePageNews" FunctionName="dbNIGNModel.Store.GetByIdFavoritePageNews">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdFavoritePageNews_Result">
+          <ScalarProperty Name="FavoritesCategoryNewsID" ColumnName="FavoritesCategoryNewsID" />
+          <ScalarProperty Name="UserWallPageID" ColumnName="UserWallPageID" />
+          <ScalarProperty Name="CategoryIDNews" ColumnName="CategoryIDNews" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdHashTag" FunctionName="dbNIGNModel.Store.GetByIdHashTag">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdHashTag_Result">
+          <ScalarProperty Name="HashtagID" ColumnName="HashtagID" />
+          <ScalarProperty Name="HashtagName" ColumnName="HashtagName" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdHashtagAds" FunctionName="dbNIGNModel.Store.GetByIdHashtagAds">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdHashtagAds_Result">
+          <ScalarProperty Name="HashtagAdsID" ColumnName="HashtagAdsID" />
+          <ScalarProperty Name="HashtagID" ColumnName="HashtagID" />
+          <ScalarProperty Name="AdsID" ColumnName="AdsID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdHashtagLinkestan" FunctionName="dbNIGNModel.Store.GetByIdHashtagLinkestan">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdHashtagLinkestan_Result">
+          <ScalarProperty Name="HtagLinkID" ColumnName="HtagLinkID" />
+          <ScalarProperty Name="LinkestanID" ColumnName="LinkestanID" />
+          <ScalarProperty Name="HashtagID" ColumnName="HashtagID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdHashtagNews" FunctionName="dbNIGNModel.Store.GetByIdHashtagNews">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdHashtagNews_Result">
+          <ScalarProperty Name="HashTagNewsID" ColumnName="HashTagNewsID" />
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="HashtagID" ColumnName="HashtagID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdHashtagPagePost" FunctionName="dbNIGNModel.Store.GetByIdHashtagPagePost">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdHashtagPagePost_Result">
+          <ScalarProperty Name="HashtagPagePostID" ColumnName="HashtagPagePostID" />
+          <ScalarProperty Name="HashtagID" ColumnName="HashtagID" />
+          <ScalarProperty Name="PagePostID" ColumnName="PagePostID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdIpAddress" FunctionName="dbNIGNModel.Store.GetByIdIpAddress">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdIpAddress_Result">
+          <ScalarProperty Name="IpAddressID" ColumnName="IpAddressID" />
+          <ScalarProperty Name="IpAddress" ColumnName="IpAddress" />
+          <ScalarProperty Name="DateRegister" ColumnName="DateRegister" />
+          <ScalarProperty Name="BrowserName" ColumnName="BrowserName" />
+          <ScalarProperty Name="WindowsName" ColumnName="WindowsName" />
+          <ScalarProperty Name="BrowserVersion" ColumnName="BrowserVersion" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdLanguages" FunctionName="dbNIGNModel.Store.GetByIdLanguages">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdLanguages_Result">
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="Lnaguage" ColumnName="Lnaguage" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdLinkestan" FunctionName="dbNIGNModel.Store.GetByIdLinkestan">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdLinkestan_Result">
+          <ScalarProperty Name="LikestanID" ColumnName="LikestanID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="LinkName" ColumnName="LinkName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="DateRegister" ColumnName="DateRegister" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdLocations" FunctionName="dbNIGNModel.Store.GetByIdLocations">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdLocations_Result">
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="NeighbourhoodID" ColumnName="NeighbourhoodID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdMenu" FunctionName="dbNIGNModel.Store.GetByIdMenu" />
+    <FunctionImportMapping FunctionImportName="GetByIdNews" FunctionName="dbNIGNModel.Store.GetByIdNews">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdNews_Result">
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PublishDate" ColumnName="PublishDate" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="ViewNumber" ColumnName="ViewNumber" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="RssID" ColumnName="RssID" />
+          <ScalarProperty Name="LikeCount" ColumnName="LikeCount" />
+          <ScalarProperty Name="Unlike" ColumnName="Unlike" />
+          <ScalarProperty Name="Likes" ColumnName="Likes" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdNewsLocation" FunctionName="dbNIGNModel.Store.GetByIdNewsLocation">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdNewsLocation_Result">
+          <ScalarProperty Name="NewsLocationID" ColumnName="NewsLocationID" />
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdPageFreinds" FunctionName="dbNIGNModel.Store.GetByIdPageFreinds">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdPageFreinds_Result">
+          <ScalarProperty Name="PageFreindID" ColumnName="PageFreindID" />
+          <ScalarProperty Name="UserWallPageID" ColumnName="UserWallPageID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Invited" ColumnName="Invited" />
+          <ScalarProperty Name="Confrim" ColumnName="Confrim" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdPagePost" FunctionName="dbNIGNModel.Store.GetByIdPagePost">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdPagePost_Result">
+          <ScalarProperty Name="PagePostId" ColumnName="PagePostId" />
+          <ScalarProperty Name="UserWallPageID" ColumnName="UserWallPageID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Likes" ColumnName="Likes" />
+          <ScalarProperty Name="UnLike" ColumnName="UnLike" />
+          <ScalarProperty Name="Visit" ColumnName="Visit" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdPagePostLocations" FunctionName="dbNIGNModel.Store.GetByIdPagePostLocations">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdPagePostLocations_Result">
+          <ScalarProperty Name="PagePostLocID" ColumnName="PagePostLocID" />
+          <ScalarProperty Name="PagePostID" ColumnName="PagePostID" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdPagePrivacyType" FunctionName="dbNIGNModel.Store.GetByIdPagePrivacyType">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdPagePrivacyType_Result">
+          <ScalarProperty Name="PrivacyTypeID" ColumnName="PrivacyTypeID" />
+          <ScalarProperty Name="PrivacyType" ColumnName="PrivacyType" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdRateUsers" FunctionName="dbNIGNModel.Store.GetByIdRateUsers">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdRateUsers_Result">
+          <ScalarProperty Name="UserRateID" ColumnName="UserRateID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="PostCount" ColumnName="PostCount" />
+          <ScalarProperty Name="LikesCount" ColumnName="LikesCount" />
+          <ScalarProperty Name="UnLikesCount" ColumnName="UnLikesCount" />
+          <ScalarProperty Name="CommentsCount" ColumnName="CommentsCount" />
+          <ScalarProperty Name="SaveImageCount" ColumnName="SaveImageCount" />
+          <ScalarProperty Name="ShareFileCount" ColumnName="ShareFileCount" />
+          <ScalarProperty Name="FriendCount" ColumnName="FriendCount" />
+          <ScalarProperty Name="SpamCount" ColumnName="SpamCount" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdRss" FunctionName="dbNIGNModel.Store.GetByIdRss">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdRss_Result">
+          <ScalarProperty Name="RssID" ColumnName="RssID" />
+          <ScalarProperty Name="RssUrl" ColumnName="RssUrl" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="RssTypeID" ColumnName="RssTypeID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdSearchedKeyword" FunctionName="dbNIGNModel.Store.GetByIdSearchedKeyword">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdSearchedKeyword_Result">
+          <ScalarProperty Name="SearchedKeyID" ColumnName="SearchedKeyID" />
+          <ScalarProperty Name="SearchedKeyword" ColumnName="SearchedKeyword" />
+          <ScalarProperty Name="CountSearched" ColumnName="CountSearched" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+          <ScalarProperty Name="MountYear" ColumnName="MountYear" />
+          <ScalarProperty Name="LastUpdateInMount" ColumnName="LastUpdateInMount" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdTimes" FunctionName="dbNIGNModel.Store.GetByIdTimes">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdTimes_Result">
+          <ScalarProperty Name="TimeID" ColumnName="TimeID" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdUploadAdsFile" FunctionName="dbNIGNModel.Store.GetByIdUploadAdsFile">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdUploadAdsFile_Result">
+          <ScalarProperty Name="UploadAdsFileID" ColumnName="UploadAdsFileID" />
+          <ScalarProperty Name="AdsID" ColumnName="AdsID" />
+          <ScalarProperty Name="FileAddress" ColumnName="FileAddress" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdUsers" FunctionName="dbNIGNModel.Store.GetByIdUsers">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdUsers_Result">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Lastname" ColumnName="Lastname" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Tell" ColumnName="Tell" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="SecondryPass" ColumnName="SecondryPass" />
+          <ScalarProperty Name="UserLinkPage" ColumnName="UserLinkPage" />
+          <ScalarProperty Name="PersonelImageUrl" ColumnName="PersonelImageUrl" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+          <ScalarProperty Name="NationalityID" ColumnName="NationalityID" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="BussinessFieldID" ColumnName="BussinessFieldID" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="NickName" ColumnName="NickName" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByIdUserWallPages" FunctionName="dbNIGNModel.Store.GetByIdUserWallPages">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByIdUserWallPages_Result">
+          <ScalarProperty Name="UserWallPageID" ColumnName="UserWallPageID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="PrivacyTypeID" ColumnName="PrivacyTypeID" />
+          <ScalarProperty Name="PageRate" ColumnName="PageRate" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+          <ScalarProperty Name="Confrim" ColumnName="Confrim" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TelegramLink" ColumnName="TelegramLink" />
+          <ScalarProperty Name="FacebookLink" ColumnName="FacebookLink" />
+          <ScalarProperty Name="TwitterLink" ColumnName="TwitterLink" />
+          <ScalarProperty Name="GooglePlusLink" ColumnName="GooglePlusLink" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="FriendCount" ColumnName="FriendCount" />
+          <ScalarProperty Name="PageImageUrl" ColumnName="PageImageUrl" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetByNameCategories" FunctionName="dbNIGNModel.Store.GetByNameCategories">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetByNameCategories_Result">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="ParrentID" ColumnName="ParrentID" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetCountSearchedKeyInDayMonthYear_Ago" FunctionName="dbNIGNModel.Store.GetCountSearchedKeyInDayMonthYear_Ago">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetCountSearchedKeyInDayMonthYear_Ago_Result">
+          <ScalarProperty Name="DAY_1" ColumnName="DAY 1" />
+          <ScalarProperty Name="DAY_2" ColumnName="DAY 2" />
+          <ScalarProperty Name="DAY_3" ColumnName="DAY 3" />
+          <ScalarProperty Name="DAY_4" ColumnName="DAY 4" />
+          <ScalarProperty Name="DAY_5" ColumnName="DAY 5" />
+          <ScalarProperty Name="DAY_6" ColumnName="DAY 6" />
+          <ScalarProperty Name="DAY_7" ColumnName="DAY 7" />
+          <ScalarProperty Name="DAY_8" ColumnName="DAY 8" />
+          <ScalarProperty Name="DAY_9" ColumnName="DAY 9" />
+          <ScalarProperty Name="DAY_10" ColumnName="DAY 10" />
+          <ScalarProperty Name="DAY_11" ColumnName="DAY 11" />
+          <ScalarProperty Name="DAY_12" ColumnName="DAY 12" />
+          <ScalarProperty Name="DAY_13" ColumnName="DAY 13" />
+          <ScalarProperty Name="DAY_14" ColumnName="DAY 14" />
+          <ScalarProperty Name="DAY_15" ColumnName="DAY 15" />
+          <ScalarProperty Name="DAY_16" ColumnName="DAY 16" />
+          <ScalarProperty Name="DAY_17" ColumnName="DAY 17" />
+          <ScalarProperty Name="DAY_18" ColumnName="DAY 18" />
+          <ScalarProperty Name="DAY_19" ColumnName="DAY 19" />
+          <ScalarProperty Name="DAY_20" ColumnName="DAY 20" />
+          <ScalarProperty Name="DAY_21" ColumnName="DAY 21" />
+          <ScalarProperty Name="DAY_22" ColumnName="DAY 22" />
+          <ScalarProperty Name="DAY_23" ColumnName="DAY 23" />
+          <ScalarProperty Name="DAY_24" ColumnName="DAY 24" />
+          <ScalarProperty Name="DAY_25" ColumnName="DAY 25" />
+          <ScalarProperty Name="DAY_26" ColumnName="DAY 26" />
+          <ScalarProperty Name="DAY_27" ColumnName="DAY 27" />
+          <ScalarProperty Name="DAY_28" ColumnName="DAY 28" />
+          <ScalarProperty Name="DAY_29" ColumnName="DAY 29" />
+          <ScalarProperty Name="DAY_30" ColumnName="DAY 30" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetHashtagIDByTagName" FunctionName="dbNIGNModel.Store.GetHashtagIDByTagName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetHashtagIDByTagName_Result">
+          <ScalarProperty Name="HashtagID" ColumnName="HashtagID" />
+          <ScalarProperty Name="HashtagName" ColumnName="HashtagName" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetLatestNewsByTagNameOrderByDate" FunctionName="dbNIGNModel.Store.GetLatestNewsByTagNameOrderByDate">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetLatestNewsByTagNameOrderByDate_Result">
+          <ScalarProperty Name="RowNumber" ColumnName="RowNumber" />
+          <ScalarProperty Name="PublishDate" ColumnName="PublishDate" />
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="RssName" ColumnName="RssName" />
+          <ScalarProperty Name="ViewNumber" ColumnName="ViewNumber" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="RssID" ColumnName="RssID" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+          <ScalarProperty Name="Likes" ColumnName="Likes" />
+          <ScalarProperty Name="Unlike" ColumnName="Unlike" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetLatestNewsOrderByDate" FunctionName="dbNIGNModel.Store.GetLatestNewsOrderByDate">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetLatestNewsOrderByDate_Result">
+          <ScalarProperty Name="RowNumber" ColumnName="RowNumber" />
+          <ScalarProperty Name="PublishDate" ColumnName="PublishDate" />
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="RssName" ColumnName="RssName" />
+          <ScalarProperty Name="ViewNumber" ColumnName="ViewNumber" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="RssID" ColumnName="RssID" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+          <ScalarProperty Name="Likes" ColumnName="Likes" />
+          <ScalarProperty Name="Unlike" ColumnName="Unlike" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetLatestNewsOrderByDateByRssID" FunctionName="dbNIGNModel.Store.GetLatestNewsOrderByDateByRssID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetLatestNewsOrderByDateByRssID_Result">
+          <ScalarProperty Name="RowNumber" ColumnName="RowNumber" />
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ViewNumber" ColumnName="ViewNumber" />
+          <ScalarProperty Name="PubDate" ColumnName="PubDate" />
+          <ScalarProperty Name="Descriptions" ColumnName="Descriptions" />
+          <ScalarProperty Name="RssID" ColumnName="RssID" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="LinkUrl" ColumnName="LinkUrl" />
+          <ScalarProperty Name="DateInserted" ColumnName="DateInserted" />
+          <ScalarProperty Name="RssName" ColumnName="RssName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetNewsOrderByDate" FunctionName="dbNIGNModel.Store.GetNewsOrderByDate">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetNewsOrderByDate_Result">
+          <ScalarProperty Name="RowNumber" ColumnName="RowNumber" />
+          <ScalarProperty Name="Unlike" ColumnName="Unlike" />
+          <ScalarProperty Name="Likes" ColumnName="Likes" />
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ViewNumber" ColumnName="ViewNumber" />
+          <ScalarProperty Name="PublishDate" ColumnName="PublishDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="RssID" ColumnName="RssID" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+          <ScalarProperty Name="rssname" ColumnName="rssname" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetPageCountWithTagName" FunctionName="dbNIGNModel.Store.GetPageCountWithTagName" />
+    <FunctionImportMapping FunctionImportName="GetToNewsEachCategory" FunctionName="dbNIGNModel.Store.GetToNewsEachCategory">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetToNewsEachCategory_Result">
+          <ScalarProperty Name="TempID" ColumnName="TempID" />
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="rssname" ColumnName="rssname" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="ViewNumber" ColumnName="ViewNumber" />
+          <ScalarProperty Name="Likes" ColumnName="Likes" />
+          <ScalarProperty Name="Unlike" ColumnName="Unlike" />
+          <ScalarProperty Name="RecordType" ColumnName="RecordType" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetTop200HashTagDayWeekMonthYear" FunctionName="dbNIGNModel.Store.GetTop200HashTagDayWeekMonthYear">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetTop200HashTagDayWeekMonthYear_Result">
+          <ScalarProperty Name="HashtagName" ColumnName="HashtagName" />
+          <ScalarProperty Name="repcount" ColumnName="repcount" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Day" ColumnName="Day" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetTopNewsByCategoryName" FunctionName="dbNIGNModel.Store.GetTopNewsByCategoryName" />
+    <FunctionImportMapping FunctionImportName="GetTopNewsSlider" FunctionName="dbNIGNModel.Store.GetTopNewsSlider">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetTopNewsSlider_Result">
+          <ScalarProperty Name="TempID" ColumnName="TempID" />
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="rssname" ColumnName="rssname" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="ViewNumber" ColumnName="ViewNumber" />
+          <ScalarProperty Name="Likes" ColumnName="Likes" />
+          <ScalarProperty Name="Unlike" ColumnName="Unlike" />
+          <ScalarProperty Name="RecordType" ColumnName="RecordType" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetTopViewNews" FunctionName="dbNIGNModel.Store.GetTopViewNews">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.GetTopViewNews_Result">
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Title1" ColumnName="Title1" />
+          <ScalarProperty Name="ViewNumber" ColumnName="ViewNumber" />
+          <ScalarProperty Name="PublishDate" ColumnName="PublishDate" />
+          <ScalarProperty Name="Likes" ColumnName="Likes" />
+          <ScalarProperty Name="Unlike" ColumnName="Unlike" />
+          <ScalarProperty Name="rssname" ColumnName="rssname" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="RssID" ColumnName="RssID" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LatestNewsOrderByPublishDate" FunctionName="dbNIGNModel.Store.LatestNewsOrderByPublishDate">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.LatestNewsOrderByPublishDate_Result">
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="RssName" ColumnName="RssName" />
+          <ScalarProperty Name="ViewNumber" ColumnName="ViewNumber" />
+          <ScalarProperty Name="PublishDate" ColumnName="PublishDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="RssID" ColumnName="RssID" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LatestNewsOrderByViewNumber" FunctionName="dbNIGNModel.Store.LatestNewsOrderByViewNumber">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.LatestNewsOrderByViewNumber_Result">
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="RssName" ColumnName="RssName" />
+          <ScalarProperty Name="ViewNumber" ColumnName="ViewNumber" />
+          <ScalarProperty Name="PublishDate" ColumnName="PublishDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="RssID" ColumnName="RssID" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ResetCountTblHashTagAndArchived" FunctionName="dbNIGNModel.Store.ResetCountTblHashTagAndArchived" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblAdsLocations" FunctionName="dbNIGNModel.Store.sp_Add_tblAdsLocations" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblAdsSchedules" FunctionName="dbNIGNModel.Store.sp_Add_tblAdsSchedules" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblBlockTag" FunctionName="dbNIGNModel.Store.sp_Add_tblBlockTag" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblCategories" FunctionName="dbNIGNModel.Store.sp_Add_tblCategories" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblComments" FunctionName="dbNIGNModel.Store.sp_Add_tblComments" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblDays" FunctionName="dbNIGNModel.Store.sp_Add_tblDays" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblFavoritePageNews" FunctionName="dbNIGNModel.Store.sp_Add_tblFavoritePageNews" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblHashTag" FunctionName="dbNIGNModel.Store.sp_Add_tblHashTag" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblHashtagAds" FunctionName="dbNIGNModel.Store.sp_Add_tblHashtagAds" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblHashtagLinkestan" FunctionName="dbNIGNModel.Store.sp_Add_tblHashtagLinkestan" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblHashtagNews" FunctionName="dbNIGNModel.Store.sp_Add_tblHashtagNews" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblHashtagPagePost" FunctionName="dbNIGNModel.Store.sp_Add_tblHashtagPagePost" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblIpAddress" FunctionName="dbNIGNModel.Store.sp_Add_tblIpAddress" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblLanguages" FunctionName="dbNIGNModel.Store.sp_Add_tblLanguages" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblLinkestan" FunctionName="dbNIGNModel.Store.sp_Add_tblLinkestan" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblLocations" FunctionName="dbNIGNModel.Store.sp_Add_tblLocations" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblMenu" FunctionName="dbNIGNModel.Store.sp_Add_tblMenu" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblNews" FunctionName="dbNIGNModel.Store.sp_Add_tblNews" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblNewsLocation" FunctionName="dbNIGNModel.Store.sp_Add_tblNewsLocation" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblPageFreinds" FunctionName="dbNIGNModel.Store.sp_Add_tblPageFreinds" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblPagePost" FunctionName="dbNIGNModel.Store.sp_Add_tblPagePost" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblPagePostLocations" FunctionName="dbNIGNModel.Store.sp_Add_tblPagePostLocations" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblPrivacyType" FunctionName="dbNIGNModel.Store.sp_Add_tblPrivacyType" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblRateUsers" FunctionName="dbNIGNModel.Store.sp_Add_tblRateUsers" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblRss" FunctionName="dbNIGNModel.Store.sp_Add_tblRss" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblSearchedKeyword" FunctionName="dbNIGNModel.Store.sp_Add_tblSearchedKeyword" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblTimes" FunctionName="dbNIGNModel.Store.sp_Add_tblTimes" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblUploadAdsFile" FunctionName="dbNIGNModel.Store.sp_Add_tblUploadAdsFile" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblUsers" FunctionName="dbNIGNModel.Store.sp_Add_tblUsers" />
+    <FunctionImportMapping FunctionImportName="sp_Add_tblUserWallPages" FunctionName="dbNIGNModel.Store.sp_Add_tblUserWallPages" />
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="dbNIGNModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="dbNIGNModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblAdsLocations" FunctionName="dbNIGNModel.Store.sp_DeltblAdsLocations" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblBlockTag" FunctionName="dbNIGNModel.Store.sp_DeltblBlockTag" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblCategories" FunctionName="dbNIGNModel.Store.sp_DeltblCategories" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblComments" FunctionName="dbNIGNModel.Store.sp_DeltblComments" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblDailyDays" FunctionName="dbNIGNModel.Store.sp_DeltblDailyDays" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblDays" FunctionName="dbNIGNModel.Store.sp_DeltblDays" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblFavoritePageNews" FunctionName="dbNIGNModel.Store.sp_DeltblFavoritePageNews" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblHashTag" FunctionName="dbNIGNModel.Store.sp_DeltblHashTag" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblHashtagAds" FunctionName="dbNIGNModel.Store.sp_DeltblHashtagAds" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblHashtagLinkestan" FunctionName="dbNIGNModel.Store.sp_DeltblHashtagLinkestan" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblHashtagNews" FunctionName="dbNIGNModel.Store.sp_DeltblHashtagNews" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblHashtagPagePost" FunctionName="dbNIGNModel.Store.sp_DeltblHashtagPagePost" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblLanguages" FunctionName="dbNIGNModel.Store.sp_DeltblLanguages" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblLinkestan" FunctionName="dbNIGNModel.Store.sp_DeltblLinkestan" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblLocations" FunctionName="dbNIGNModel.Store.sp_DeltblLocations" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblMenu" FunctionName="dbNIGNModel.Store.sp_DeltblMenu" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblNews" FunctionName="dbNIGNModel.Store.sp_DeltblNews" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblNewsLocation" FunctionName="dbNIGNModel.Store.sp_DeltblNewsLocation" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblPageFreinds" FunctionName="dbNIGNModel.Store.sp_DeltblPageFreinds" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblPagePost" FunctionName="dbNIGNModel.Store.sp_DeltblPagePost" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblPagePostLocations" FunctionName="dbNIGNModel.Store.sp_DeltblPagePostLocations" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblPrivacyType" FunctionName="dbNIGNModel.Store.sp_DeltblPrivacyType" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblRateUsers" FunctionName="dbNIGNModel.Store.sp_DeltblRateUsers" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblRss" FunctionName="dbNIGNModel.Store.sp_DeltblRss" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblSearchedKeyword" FunctionName="dbNIGNModel.Store.sp_DeltblSearchedKeyword" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblTimes" FunctionName="dbNIGNModel.Store.sp_DeltblTimes" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblUploadAdsFile" FunctionName="dbNIGNModel.Store.sp_DeltblUploadAdsFile" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblUsers" FunctionName="dbNIGNModel.Store.sp_DeltblUsers" />
+    <FunctionImportMapping FunctionImportName="sp_DeltblUserWallPages" FunctionName="dbNIGNModel.Store.sp_DeltblUserWallPages" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="dbNIGNModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="dbNIGNModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="dbNIGNModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="dbNIGNModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_UpdateOrAdd_tblHashTag" FunctionName="dbNIGNModel.Store.sp_UpdateOrAdd_tblHashTag" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="dbNIGNModel.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="spgo_GetPageNumbers" FunctionName="dbNIGNModel.Store.spgo_GetPageNumbers" />
+    <FunctionImportMapping FunctionImportName="SyndicatorTopNewsCategoryID" FunctionName="dbNIGNModel.Store.SyndicatorTopNewsCategoryID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbNIGNModel.SyndicatorTopNewsCategoryID_Result">
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="rssname" ColumnName="rssname" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="ViewNumber" ColumnName="ViewNumber" />
+          <ScalarProperty Name="Likes" ColumnName="Likes" />
+          <ScalarProperty Name="Unlike" ColumnName="Unlike" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
