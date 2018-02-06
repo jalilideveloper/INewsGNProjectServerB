@@ -511,8 +511,8 @@
     </Content>
     <Content Include="Models\dbINewsGn.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>dbINewsGn.Context.cs</LastGenOutput>
       <DependentUpon>dbINewsGn.edmx</DependentUpon>
+      <LastGenOutput>dbINewsGn.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Models\dbINewsGn.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -534,6 +534,9 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <EntityDeploy Include="Models\dbINewsGn.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>dbINewsGn.Designer.cs</LastGenOutput>
@@ -543,9 +546,6 @@
     <Content Include="Models\dbINewsGn.edmx.diagram">
       <DependentUpon>dbINewsGn.edmx</DependentUpon>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
