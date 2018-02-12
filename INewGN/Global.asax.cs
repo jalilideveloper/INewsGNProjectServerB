@@ -26,14 +26,17 @@ namespace INewGN
 
             GlobalConfiguration.Configure(WebApiConfig.Register);
 
-
             UpdateNewsTimer = new System.Timers.Timer(20000);
             // Hook up the Elapsed event for the timer. 
             Utility u = new Utility();
             UpdateNewsTimer.Elapsed += u.UpdateNews;
             UpdateNewsTimer.Enabled = true;
 
+
+
             // KeywordTracker();
+
+            // Because Not Exixt Here
 
             //UpdateSitremaps = new System.Timers.Timer(800000);
             //// Hook up the Elapsed event for the timer. 
@@ -51,7 +54,7 @@ namespace INewGN
             using (dbNIGNEntities db = new dbNIGNEntities())
             {
                 var q = db.tblNews.ToList();
-                
+
                 SyncController s = new SyncController();
                 foreach (var item in q)
                 {
